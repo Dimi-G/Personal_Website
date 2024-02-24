@@ -35,7 +35,7 @@ st.sidebar.link_button("LinkedIn", "https://www.linkedin.com/in/dimitra-gkogkou/
 # BODY    
 
 st.subheader("About me")
-st.write("Natural Scientist and Data Enthusiast experienced in managing projects at the nexus of scientific inquiry and data-driven decision making.")
+st.write("Natural Scientist and Data Enthusiast, experienced in managing projects at the nexus of scientific inquiry and data-driven decision making.")
 st.markdown("<br>", unsafe_allow_html=True)
 
 st.subheader("Tech Skills")
@@ -53,7 +53,7 @@ for i, skill in enumerate(sorted_scskills):
     button= columns[col_index].button(skill)
 st.markdown("<br>", unsafe_allow_html=True)
 
-st.subheader("Soft Skills")
+st.subheader("Transferable Skills")
 sorted_sfskills = sorted(skills['Soft Skills'], key=len)
 columns = st.columns(3)
 for i, skill in enumerate(sorted_sfskills):

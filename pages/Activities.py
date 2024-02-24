@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
-from data import coordinates
+from data import coordinates, workshops, publications, distinctions
 
 st.set_page_config(layout="wide", page_title="Personal Website")
-
 
 # SIDEBAR 
 with st.container():
@@ -23,30 +22,45 @@ with open("static/CV_Gkogkou.pdf", "rb") as file:
 st.sidebar.link_button("My GitHub", "https://github.com/Dimi-G")
 st.sidebar.link_button("LinkedIn", "https://www.linkedin.com/in/dimitra-gkogkou/")
 
-#BODY
-st.subheader("Seminars")
-#include Kaggle, LinkedIn etc
-st.markdown("<br>", unsafe_allow_html=True)
 
+#BODY
 st.subheader("Presentations")
-st.write("Over the years,  I have presented my work in numerous local and global conferences and seminars.")
+st.write("Over the years, I had the luck to present my work in numerous local and global conferences and seminars.")
 df=pd.DataFrame(coordinates, columns =['latitude', 'longitude'] )
 st.map(df)
-st.image("static/WINS3.png", width=500, caption= "Women in Natural Sciences Summer School 2023 'Pointers for paper publishing & Integrity in the Research & Publishing Process'")
+st.markdown("<br>", unsafe_allow_html=True)
+ll, lr,rl, rr =st.columns(4)
+with lr:
+    st.image("static/WINS3.png", width=500, caption= "Women in Natural Sciences Summer School 2023 'Pointers for paper publishing & Integrity in the Research & Publishing Process'.")
 st.markdown("<br>", unsafe_allow_html=True)
 
-#Photos from Wins, Title of seminar. Older wiley presentations, something from Phd Conferences
+st.subheader("Seminars")
+st.write("I am invested in continuous learning. Here is a list of workshops I have completed:")
+for workshop in workshops:
+    st.write(f"- {workshop}")
+st.markdown("<br>", unsafe_allow_html=True)
+
 st.subheader("Publications")
+with st.expander("List to Academic Publications"):
+    for publication in publications:
+        st.link_button(label = f'{publication["title"]}- {publication["journal"]}({publication["year"]})',url=publication["url"])
 st.markdown("<br>", unsafe_allow_html=True)
 
 st.subheader("Distinctions")
+for distinction in distinctions:
+    st.write(f"- {distinction}")
+
+lc,lrc,rlc,rc =st.columns(4)
+with lrc:
+    st.image("static/Lindau.jpg", width=500, caption="Meeting Physics Nobelists, Prof. such as Donna Strickland, at Lindau Nobel Meeting 2019.")
 st.markdown("<br>", unsafe_allow_html=True)
-#Lindau Nobel Meeting
-#Dissertations Prize Finalist
-#Best Poster Award
 
 st.subheader("Activism")
-#https://web.archive.org/web/20210922215731/https://year2018.iscientist.de/
-#https://thessalonikipride.com/en/thessaloniki-pride-2012/
-#https://www.facebook.com/photo/?fbid=288606367913248&set=a.288605214580030&locale=el_GR
+left, right = st.columns(2)
+with left:
+    st.link_button("Co-organizer of I,Scientist 2018 - The conference on gender, career paths & networking", url="https://web.archive.org/web/20210922215731/https://year2018.iscientist.de/")
+    st.image("static/Iscientist.jpg", caption= "400 scientists joined for 2 days of presentations, workshops and career fair.")
+with right:
+    st.link_button("Co-organizer of the first Pride in Thessaloniki (2012)", url="https://thessalonikipride.com/en/thessaloniki-pride-2012/")
+    st.image("static/pride.jpg", caption="Around 2000 brave gathered for a historical first Thessaloniki Pride in 2012, an event that now attracts 18 thousand participants.")
 st.markdown("<br>", unsafe_allow_html=True)
