@@ -22,6 +22,6 @@ Welcome to the repository for my personal website built using Streamlit. This we
 - Activism
 
 **Contributing**
-If you find any issues or have suggestions for improvement, please open an issue or submit a pull request. Your contributions are highly appreciated.
+- If you find any issues or have suggestions for improvement, please open an issue or submit a pull request. Your contributions are highly appreciated.
 
 
