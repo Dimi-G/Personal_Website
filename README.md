@@ -1,5 +1,5 @@
 # Personal_Website
-Welcome to the repository for my personal website built using Streamlit. This website serves as a showcase of my projects, skills, and interests and will be constantly updated.
+Welcome to the repository for my personal website built using Streamlit. The site can be found deployed [here](https://personalwebsitegit-xytb8bcwzms2umagvmqobk.streamlit.app/). It serves as a showcase of my projects, skills, and interests and will be constantly updated.
 
 **Sidebar**
 - Downloadable CV (you can find my email in there)
