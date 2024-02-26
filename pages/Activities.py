@@ -1,27 +1,12 @@
 import streamlit as st
 import pandas as pd
 from data import coordinates, workshops, publications, distinctions
+from sidebar import show_sidebar
 
 st.set_page_config(layout="wide", page_title="Personal Website")
 
 # SIDEBAR 
-with st.container():
-    st.sidebar.image("static/DG.jpg")
-    st.sidebar.header("Dr. Dimitra Gkogkou")
-    st.sidebar.write("Aspiring Data Scientist  \n Physicist  \n Scientific Editor  \n")
-
-
-with open("static/CV_Gkogkou.pdf", "rb") as file:
-    btn = st.sidebar.download_button(
-            label="Download CV",
-            data=file,
-            file_name="CV_Gkogkou.pdf",
-            mime ="pdf"
-          )
-    
-st.sidebar.link_button("My GitHub", "https://github.com/Dimi-G")
-st.sidebar.link_button("LinkedIn", "https://www.linkedin.com/in/dimitra-gkogkou/")
-
+show_sidebar()
 
 #BODY
 st.subheader("Presentations")
@@ -29,6 +14,7 @@ st.write("Over the years, I had the luck to present my work in numerous local an
 df=pd.DataFrame(coordinates, columns =['latitude', 'longitude'] )
 st.map(df)
 st.markdown("<br>", unsafe_allow_html=True)
+#introducing columns so that the image appears more centered
 ll, lr,rl, rr =st.columns(4)
 with lr:
     st.image("static/WINS3.png", width=500, caption= "Women in Natural Sciences Summer School 2023 'Pointers for paper publishing & Integrity in the Research & Publishing Process'.")
