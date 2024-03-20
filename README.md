@@ -3,7 +3,7 @@ Welcome to the repository for my personal website built using Streamlit. The sit
 
 **Requirements**
 
-The site can be visited [online](https://personalwebsitegit-xytb8bcwzms2umagvmqobk.streamlit.app/).
+The site can be visited [online](https://dimigko.streamlit.app/).
 If you want to run it locally, use python and install the dependencies from requirements.txt with pip install -r requirements.txt.
 To run, use command: streamlit run Main.py and follow instructions for viewing it in your local browser (usually it is http://localhost:8501 )
 
