@@ -93,15 +93,4 @@ with st.expander("Studies"):
     st.write(f"**Thesis:** {thesis}")
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ----------------- timeline ----------------- #
-with st.container():
-    st.markdown("""""")
-    st.subheader('📌 Career Snapshot')
-
-    # load data
-    with open('example.json', "r") as f:
-        data = f.read()
-
-    # render timeline
-    timeline(data, height=400)
 
