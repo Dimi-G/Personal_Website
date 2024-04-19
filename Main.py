@@ -1,6 +1,7 @@
 import streamlit as st 
 from data import skills, work_exp, education
 from sidebar import show_sidebar
+from streamlit_timeline import timeline
 
 st.set_page_config(layout="wide", page_title="Personal Website")
 
@@ -24,7 +25,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 left,middle,right =st.columns(3)
 with left:
-    with open("static/CV_Gkogkou.pdf", "rb") as file:
+    with open("static/CV_Dimitra_Gkogkou.pdf", "rb") as file:
         btn = st.download_button(
                 label="Download CV",
                 data=file,
@@ -92,5 +93,15 @@ with st.expander("Studies"):
     st.write(f"**Thesis:** {thesis}")
 st.markdown("<br>", unsafe_allow_html=True)
 
+# ----------------- timeline ----------------- #
+with st.container():
+    st.markdown("""""")
+    st.subheader('📌 Career Snapshot')
 
+    # load data
+    with open('example.json', "r") as f:
+        data = f.read()
+
+    # render timeline
+    timeline(data, height=400)
 

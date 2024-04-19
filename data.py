@@ -64,7 +64,7 @@ education = { 2017:
              },
              }
 
-workshops = ["100 Days of Code: The Complete Python Pro Bootcamp (Udemy-Dr. Angela Yu-2024)","Computer Vision (Kaggle-2023)","Intro to Deep Learning (Kaggle-2023)", "Intro to Machine Learning (Kaggle-2023)", "SQL Essential Training (Linkedin Learning-2023)","Lean Six Sigma Yellow Belt (Wiley-2021)","Scientific Writing", "Analytical Data", "Scientific Inquiry", "Team Work & Leadership Competencies", "Team Communication"]
+workshops = ["Become a Data Scientist (Linkedin Learning-2024)","100 Days of Code: The Complete Python Pro Bootcamp (Udemy-Dr. Angela Yu-2024)","Computer Vision (Kaggle-2023)","Intro to Deep Learning (Kaggle-2023)", "Intro to Machine Learning (Kaggle-2023)", "SQL Essential Training (Linkedin Learning-2023)","Lean Six Sigma Yellow Belt (Wiley-2021)","Scientific Writing", "Analytical Data", "Scientific Inquiry", "Team Work & Leadership Competencies", "Team Communication"]
 
 coordinates = [[33.3803475,126.5482545], [51.5074456,-0.1277653],[51.0493286,13.7381437], [52.4082663,16.9335199],[52.5170365,13.3888599], [51.3406321,12.3747329],[50.8323531,12.918914],[51.5142273,7.4652789],[51.434999,6.759562],[38.1937571,15.5542082],[32.0852997,34.7818064],[40.6403167,22.9352716], [47.550753,9.6926624], [52.3253541,6.7933211], [49.0068705,8.4034195], [37.9755648,23.7348324]]
 
