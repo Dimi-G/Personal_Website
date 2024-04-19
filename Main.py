@@ -93,4 +93,3 @@ with st.expander("Studies"):
     st.write(f"**Thesis:** {thesis}")
 st.markdown("<br>", unsafe_allow_html=True)
 
-
