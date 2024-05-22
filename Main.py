@@ -25,7 +25,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 left,middle,right =st.columns(3)
 with left:
-    with open("static/CV_Dimitra_Gkogkou.pdf", "rb") as file:
+    with open("static/DimitraGkogkouResume.pdf", "rb") as file:
         btn = st.download_button(
                 label="Download CV",
                 data=file,
