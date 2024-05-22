@@ -20,7 +20,7 @@ show_sidebar()
 
 # BODY    
 st.subheader("About me")
-st.write("Natural Scientist and Data Enthusiast, experienced in managing projects at the nexus of scientific inquiry and data-driven decision making.")
+st.write("Data Scientist & Physicist, experienced in managing projects at the nexus of scientific inquiry and data-driven decision making.")
 st.markdown("<br>", unsafe_allow_html=True) 
 
 left,middle,right =st.columns(3)
@@ -29,7 +29,7 @@ with left:
         btn = st.download_button(
                 label="Download CV",
                 data=file,
-                file_name="CV_Gkogkou.pdf",
+                file_name="DimitraGkogkouResume.pdf",
                 mime ="pdf"
             )
 with middle:
