@@ -1,5 +1,5 @@
 skills= {
-    'Tech Skills': ['Python', 'NumPy', 'Pandas', 'Scikit-Learn', 'Keras', 'Matplotlib', 'Seaborn', 'Flask', 'SQLAlchemy', 'SQL', 'Git', 'HTML 5', 'CSS 3','Linux'],
+    'Tech Skills': ['Python', 'Linux', 'Bash', 'Git', 'GitHub','NumPy', 'Pandas', 'SQL', 'Scikit-Learn', 'Keras', 'Streamlit', 'Matplotlib/Seaborn', 'Flask', 'Selenium', 'HTML 5', 'CSS 3', 'Bootstrap', 'Beautiful Soup', 'PostgreSQL'],
     'Science Skills' : ['Data Analysis', 'Mathematical Methodology', 'Materials & Nanotechnologies', 'Spectroscopic Techniques', 'Raman Scattering', 'IR Absorption', 'Ellipsometry', 'Atomic Force Microscopy', 'Scanning Electron Microscopy', 'UHV Deposition', 'Chemical Monolayer Preparation', 'Microfluidics', 'Cyclic Voltametry','Oxygen Plasma Treatment'],
     'Soft Skills': ['Project Management', 'Scientific Writing', 'Presentation Skills', 'Negotiation Methods', 'Interdisciplinarity', 'Team Work in Intercultural Environments', 'Time Management', 'Autonomy']
     }
